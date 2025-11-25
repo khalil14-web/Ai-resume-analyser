@@ -52,7 +52,4 @@ AI Resume Analyzer is a project built with React, React Router, and Puter.js tha
 - [npm](https://www.npmjs.com/)
 
 **Cloning the Repository**:
-
-```bash
-git clone <YOUR_REPO_URL>
-cd <YOUR_PROJECT_FOLDER>
+todo......
