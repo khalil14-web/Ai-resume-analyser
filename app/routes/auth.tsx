@@ -5,7 +5,7 @@ import { useLocation, useNavigate } from "react-router";
 export const meta = () => ([
     { title: 'Resumind | Auth' },
     { name: 'description', content: 'Log into your account' },
-]);
+])
 
 const Auth = () => {
     const { isLoading, auth } = usePuterStore();
@@ -26,8 +26,6 @@ const Auth = () => {
         setShouldNavigate(true); 
     };
 
-
-
     return (
         <main className="bg-[url('/images/bg-auth.svg')] bg-cover min-h-screen flex items-center justify-center">
             <div className="gradient-border shadow-lg">
@@ -45,7 +43,7 @@ const Auth = () => {
                             <>
                                 {auth.isAuthenticated ? (
                                     <button className="auth-button" onClick={auth.signOut}>
-                                            <p>Log Out</p>
+                                        <p>Log Out</p>
                                     </button>
                                 ) : (
                                     <button className="auth-button" onClick={handleLogin}>
@@ -55,7 +53,6 @@ const Auth = () => {
                             </>
                         )}
                     </div>
-
                 </section>
             </div>
         </main>

@@ -8,7 +8,7 @@ declare global {
                 isSignedIn: () => Promise<boolean>;
                 signIn: () => Promise<void>;
                 signOut: () => Promise<void>;
-                
+
             };
             fs: {
                 write: (
