@@ -46,6 +46,17 @@ const Upload = () => {
 
         setStatusText('Analyzing...');
 
+
+
+
+        
+
+
+
+
+
+
+
         const feedback = await ai.feedback(
             uploadedFile.path,
             prepareInstructions({ jobTitle, jobDescription })
@@ -113,9 +124,10 @@ const Upload = () => {
                                 <FileUploader onFileSelect={handleFileSelect} />
                             </div>
 
-                            <button className="primary-button" type="submit">
-                                Analyze Resume
-                            </button>
+                           <button disabled={isProcessing} className="primary-button">
+    {isProcessing ? "Please wait..." : "Analyze Resume"}
+</button>
+
                         </form>
                     )}
                 </div>

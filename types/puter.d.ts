@@ -1,4 +1,5 @@
 interface FSItem {
+    file: File;
     id: string;
     uid: string;
     name: string;
